@@ -37,7 +37,7 @@ function App() {
             <h2 className='profile-name'>Nuttakitta Mongkhonsari</h2>
             <h2 className='profile-job'>Back-end Developer</h2>
             <div className='card-bottom'>
-              <NavLink onClick={onButtonClick}>Download Resume</NavLink>
+              <NavLink onClick={onButtonClick}>Open Resume</NavLink>
             </div>
           </div>
           <div className='card-info'>
