@@ -25,9 +25,9 @@ function App() {
         <body className="app-container">
           <div className='menu'>
             <ul>
-              <li><NavLink to='/portfolio'><IoIosPerson size={25}/>About</NavLink></li>
-              <li><NavLink to='/portfolio/project'><AiOutlineFundProjectionScreen size={25}/>Project</NavLink></li>
-              <li><NavLink to='/portfolio/contact'><FaAt size={25}/>Contact</NavLink></li>
+              <li><NavLink to='/portfolio' exact={true}><IoIosPerson size={25}/>About</NavLink></li>
+              <li><NavLink to='/portfolio/project' exact={true}><AiOutlineFundProjectionScreen size={25}/>Project</NavLink></li>
+              <li><NavLink to='/portfolio/contact' exact={true}><FaAt size={25}/>Contact</NavLink></li>
             </ul>
           </div>
           <div className='card-profile'>
@@ -42,9 +42,9 @@ function App() {
           </div>
           <div className='card-info'>
             <Routes>
-              <Route path='/portfolio' element={AboutMe}/>
-              <Route path='/portfolio/project' element={Project} />
-              <Route path='/portfolio/contact' element={Contact} />
+              <Route path='/portfolio' element={AboutMe} exact={true}/>
+              <Route path='/portfolio/project' element={Project} exact={true}/>
+              <Route path='/portfolio/contact' element={Contact} exact={true}/>
             </Routes>
           </div>
         </body>
