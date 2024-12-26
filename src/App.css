@@ -42,10 +42,10 @@
     }
   }
   .card-info {
-    min-width: 80vh;
+    min-width: 30vw;
   }
   .card-profile {
-    min-width: 60vh;
+    min-width: 20vw;
   }
  }
 
@@ -104,8 +104,7 @@
     clip-path: polygon( 0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
     img {
       border-radius: 5px 5px 0px 0px;
-      min-width: 60vh;
-      height: 50vh;
+      height: 54vh;
     }
   }
  .profile-name {

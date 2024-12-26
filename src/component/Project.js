@@ -13,7 +13,7 @@ function Project() {
                     <h5>ระบบเช่าหอพัก</h5>
                     <ReactPlayer 
                         url='https://youtu.be/4k50fkNPSZw' 
-                        width="80vh"/>
+                        width="37vw"/>
                     <ul>
                         <li>
                             <p>โปรเจค ระบบเช่าหอพัก</p>
@@ -52,7 +52,7 @@ function Project() {
                     <h5>Space Time</h5>
                     <ReactPlayer 
                         url='https://youtu.be/7RejodGp9v4' 
-                        width="80vh"/>
+                        width="37vw"/>
                     <ul>
                         <li>
                             <a href='https://django-tailwind-nasaapi-g45a.vercel.app/' target='_blank' rel="noreferrer">โปรเจค Space Time</a>
@@ -88,7 +88,7 @@ function Project() {
                     <h5>To Do List Back-End</h5>
                     <ReactPlayer 
                         url='https://youtu.be/Vc170TTuMV8' 
-                        width="80vh"/>
+                        width="37vw"/>
                     <ul>
                         <li>
                             <a href='https://github.com/nuttamong/toDoListNestJS' target='_blank' rel="noreferrer">โปรเจค To Do List ในส่วนของ Back-End</a>
