@@ -1,0 +1,65 @@
+.contact{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    display: block;
+    margin-top: 10%;
+    h4 {
+        padding: 10px;
+        font-size: 1.8em;
+        text-align: start;
+        span {
+            color: chocolate;
+        }
+    }
+    p, a{
+        font-size: 1.2em;
+        text-align: start;
+        text-decoration: none;
+        color: darkslategray;
+    }
+    a:hover{
+        color: chocolate;
+        text-decoration: underline;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li { 
+          padding: 2px;
+          padding-top: 15px;
+          text-align: start;
+          padding-left: 10px;
+          transition: all 0.3s ease-in-out;
+          p{
+            padding: 0;
+          }
+        }
+
+        li:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        margin-top: 0;
+        h4 {
+            font-size: 1.5em;
+        }
+        p, a{
+            font-size: 1em;
+        }
+    }
+    .contact ul {
+        grid-template-columns: 1fr;
+    }
+    
+}

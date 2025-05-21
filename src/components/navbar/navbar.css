@@ -40,20 +40,31 @@ nav ul li a {
     transition: all 0.3s;
 }
 
-nav ul li a:hover , nav ul li .active{
+nav ul li a:hover , nav ul li .active, .profile-title a:hover{
     background: #a4fac2;
     color: darkslategray;
     border-radius: 10px;
+    transform: scale(1.1);
 }
 
 
-img {
+nav img {
     width: 240px;
     border-radius: 50%;
     transition: all 0.3s;
 }
 
-img:hover {
+nav img:hover {
     transform: scale(1.1);
     
+}
+
+.profile-title a {
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s;
 }

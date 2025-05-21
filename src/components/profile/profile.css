@@ -1,0 +1,167 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.about_me, .education, .certificate, .skill{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color: darkslategray;
+    transition: all 0.3s ease-in-out;
+    h4 {
+        padding: 10px;
+        font-size: 1.8em;
+        text-align: start;
+        span {
+            color:chocolate;
+        }
+    }
+    h5 {
+        padding-left: 10px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: medium;
+        text-align: start;
+        color:forestgreen;
+    }
+    p {
+        padding: 10px;
+        font-size: medium;
+        text-align: start;
+    }
+}
+
+.about_me:hover, .education:hover, .certificate:hover, .skill:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.education {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li { 
+          padding: 2px;
+          padding-top: 15px;
+          text-align: start;
+          padding-left: 10px;
+          h5{
+            margin: 0;
+            padding: 0;
+            font-size: medium;
+          }
+          h6{
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            color:steelblue;
+          }
+          p{
+            padding: 0;
+          }
+        }
+    }
+}
+
+.certificate {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        img {
+            width: 70%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        li { 
+          padding: 2px;
+          padding-top: 15px;
+          text-align: start;
+          padding-left: 10px;
+          h5{
+            margin: 0;
+            padding: 0;
+            font-size: medium;
+          }
+          h6{
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            color:steelblue;
+          }
+          p, a{
+            padding: 0;
+          }
+          a {
+            text-decoration: none;
+            color: darkslategray;
+            font-size: medium;
+            &:hover {
+                color: chocolate;
+                text-decoration: underline;
+            }
+          }
+        }
+    }
+}
+
+.skill {
+    .list-skill {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding-top: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: medium;
+        color: darkslategray;
+        gap: 50px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        margin-left: 20px;
+        li {
+            padding: 6px;
+            padding-left: 10px;
+            justify-self: start;
+            font-size: medium;
+            span{
+                color: chocolate;
+
+            }
+        }
+        li:last-child {
+            text-align: start;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_me, .education, .skill, .certificate{
+        height: auto;
+    }
+    .skill {
+        margin-top: 0;
+        .list-skill {
+            gap: 20px;
+        }
+    }
+    .education ul li, .certificate ul li {
+        padding: 2px;
+        padding-top: 10px;
+    }
+    
+}

@@ -1,27 +1,44 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
+import { AnimatePresence, motion } from 'framer-motion';
 
 import NavBar from './components/navbar/NavBar'
 import Profile from './components/profile/Profile'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
+import Snowfall from './components/Snowfall/Snowfall'
+
+
+const PageWrapper = ({ children }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 50 }}
+    transition={{ type: "spring", stiffness: 50 }}
+  >
+    {children}
+  </motion.div>
+);
+
 
 function App() {
+  const location = useLocation();
 
   return (
-    <Router>
-      <div className='sidebar'>
-        <NavBar />
-      </div>
-      <div className="info">
-        <Routes>
-          <Route path='/' element={Profile} end/>
-          <Route path='/project' element={Projects} end/>
-          <Route path='/contact' element={Contact} end/>
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <NavBar />
+      <AnimatePresence mode="wait">
+        <div className="info">  
+          <Routes location={location} key={location.pathname}>
+            <Route path='/' element={<PageWrapper><Profile /></PageWrapper>} />
+            <Route path='/project' element={<PageWrapper><Projects /></PageWrapper>} />
+            <Route path='/contact' element={<PageWrapper><Contact /></PageWrapper>} />
+          </Routes>
+        </div>
+      </AnimatePresence>
+      <Snowfall />
+    </>
   )
 }
 
