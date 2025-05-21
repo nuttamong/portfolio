@@ -59,6 +59,7 @@
             transform: scale(1.05);
           }
           .video{
+            width: 45vw;
             padding-top: 15px;
             transition: all 0.3s ease;
           }
@@ -67,6 +68,7 @@
           }
           .react-player {
             width: 100% !important;
+            height: 100% !important;
           }
           ul li {
             border: 0vw;
