@@ -68,3 +68,64 @@ nav img:hover {
     font-weight: bold;
     transition: all 0.3s;
 }
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        width: 250px;
+        background-color: #f0f0f0;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000; /* อยู่ด้านบน */
+    }
+
+    .navbar.open {
+        transform: translateX(0);
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    nav img {
+        width: 150px;
+    }
+    
+    nav h1 {
+        font-size: 1.5em;
+    }
+    
+    nav h2 {
+        font-size: 1.2em;
+    }
+    
+    nav ul li {
+        font-size: 1em;
+    }
+    
+}

@@ -14,7 +14,7 @@ function Projects() {
                 <div className="video">
                     <ReactPlayer 
                         url='https://youtu.be/4k50fkNPSZw' 
-                        width="45vw"
+                        className="react-player"
                         controls={true}/>
                 </div>
                 <ul>
@@ -56,7 +56,7 @@ function Projects() {
                 <div className="video">
                     <ReactPlayer 
                         url='https://youtu.be/7RejodGp9v4' 
-                        width="45vw"
+                        className="react-player"
                         controls={true}/>
                 </div>
                 <ul>
@@ -93,7 +93,7 @@ function Projects() {
                 <div className="video">
                     <ReactPlayer 
                         url='https://www.youtube.com/watch?v=X61hjMAvGqw' 
-                        width="45vw"
+                        className="react-player"
                         controls={true}/>
                 </div>
                 <ul>

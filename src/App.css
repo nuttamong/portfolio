@@ -13,3 +13,15 @@
     width: 100%;
     overflow-y: scroll;
 }
+
+@media screen and (max-width: 768px) {
+    #root {
+        position: relative;
+    }
+    .info {
+        padding: 10px 10px 20px 50px;
+        position: relative;
+        z-index: 1;
+    }
+    
+}
