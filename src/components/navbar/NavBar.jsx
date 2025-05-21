@@ -36,7 +36,7 @@ function NavBar() {
                 <div className="profile-title">
                     <img src="img/profile.jpg" alt="proflie-img" />
                     <h1>Nuttakitta Mongkhonsari</h1>
-                    <h2>Font-End Developer</h2>
+                    <h2>Front-End Developer</h2>
                     <NavLink onClick={onButtonClick}>Open Resume</NavLink>
                 </div>
                 <ul>
