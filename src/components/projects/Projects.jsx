@@ -3,12 +3,49 @@ import './projects.css'
 import ReactPlayer from 'react-player'
 import aemi from '../../assets/aemi.png'
 import movie from '../../assets/movie-app.png'
+import weather from '../../assets/weather.png'
 
 function Projects() {
   return (
     <div className='project'>
         <h4><span>P</span>roject</h4>
         <ul>
+            <li>
+                <h5>Aemi's Thai Massage</h5>
+                <img src={aemi} alt="aemi'sthaimassage"/>
+                <ul>
+                    <li>
+                        <a href='https://aemi-sthaimassage.web.app/' target='_blank' rel="noreferrer">เว็บ Aemi's Thai Massage</a>
+                    </li>
+                    <li>
+                        <a href='https://github.com/nuttamong/aemithaimassage' target='_blank' rel="noreferrer">Github: https://github.com/nuttamong/aemithaimassage</a>
+                    </li>
+                    <li>
+                        <p>เว็บไซต์นี้ เป็นเว็บไซต์ที่ผมเขียนให้กับลูกค้าที่ทำร้านนวดแผนไทย
+                        </p>
+                    </li>
+                    <li>
+                        <p>เครื่องมือที่ใช้มี ReactJS, Bootstrap, firebase hosting
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h5>Weather Wep App</h5>
+                <img src={weather} alt="weather app"/>
+                <ul>
+                    <li>
+                        <a href='https://weather-wep-app-git-main-nuttamongs-projects.vercel.app/' target='_blank' rel="noreferrer">Weather Wep App</a>
+                    </li>
+                    <li>
+                        <a href='https://github.com/nuttamong/weatherWepApp' target='_blank' rel="noreferrer">Github: https://github.com/nuttamong/weatherWepApp</a>
+                    </li>
+                    <li>
+                        <p>เครื่องมือที่ใช้มี ReactJS, openweathermap api, vercel
+                        </p>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <h5>ระบบเช่าหอพัก</h5>
                 <div className="video">
@@ -27,26 +64,6 @@ function Projects() {
                     </li>
                     <li>
                         <p>เครื่องมือที่ใช้มี PHP, MySql, Bootstrap, Html
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h5>Aemi's Thai Massage</h5>
-                <img src={aemi} alt="aemi'sthaimassage"/>
-                <ul>
-                    <li>
-                        <a href='https://aemi-sthaimassage.web.app/' target='_blank' rel="noreferrer">เว็บ Aemi's Thai Massage</a>
-                    </li>
-                    <li>
-                        <a href='https://github.com/nuttamong/aemithaimassage' target='_blank' rel="noreferrer">Github: https://github.com/nuttamong/aemithaimassage</a>
-                    </li>
-                    <li>
-                        <p>เว็บไซต์นี้ เป็นเว็บไซต์ที่ผมเขียนให้กับลูกค้าที่ทำร้านนวดแผนไทย
-                        </p>
-                    </li>
-                    <li>
-                        <p>เครื่องมือที่ใช้มี ReactJS, Bootstrap, firebase hosting
                         </p>
                     </li>
                 </ul>
